@@ -1,0 +1,11 @@
+<div class="menu-background navbar">
+  <button mat-button [matMenuTriggerFor]="menu">
+    <mat-icon fontIcon="menu"></mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item [routerLink]="['/projetos/inserir']">Inserir projeto</button>
+    <button mat-menu-item [routerLink]="['/projetos']">Listar projetos</button>
+    <button mat-menu-item [routerLink]="['/tarefas/inserir']">Inserir tarefa</button>
+    <button mat-menu-item [routerLink]="['/tarefas']">Listar tarefas</button>
+  </mat-menu>
+</div>

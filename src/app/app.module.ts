@@ -3,24 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CadastroProjetoComponent } from './pages/projeto/cadastro-projeto/cadastro-projeto.component';
-import { ListagemProjetoComponent } from './pages/projeto/listagem-projeto/listagem-projeto.component';
-import { ListagemTarefaComponent } from './pages/tarefa/listagem-tarefa/listagem-tarefa.component';
-import { CadastroTarefaComponent } from './pages/tarefa/cadastro-tarefa/cadastro-tarefa.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {TarefaModule} from "./pages/tarefa/tarefa.module";
+import {ProjetoModule} from "./pages/projeto/projeto.module";
+import {MenuModule} from "./layout/menu.module";
 
 @NgModule({
   declarations: [
-    AppComponent,
-    CadastroProjetoComponent,
-    ListagemProjetoComponent,
-    ListagemTarefaComponent,
-    CadastroTarefaComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    TarefaModule,
+    ProjetoModule,
+    MenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
